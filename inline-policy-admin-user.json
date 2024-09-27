@@ -1,0 +1,52 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowFullAccessToSpecificServices",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*",
+                "s3:*",
+                "lambda:*",
+                "iam:*",
+                "rds:*",
+                "dynamodb:*",
+                "cloudformation:*",
+                "sns:*",
+                "cloud9:*",
+                "cloudwatch:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowAttachingDetachingUserPolicies",
+            "Effect": "Allow",
+            "Action": [
+                "iam:AttachUserPolicy",
+                "iam:DetachUserPolicy"
+            ],
+            "Resource": "arn:aws:iam::*:user/${aws:username}"
+        },
+        {
+            "Sid": "AllowListingAllResources",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeVolumes",
+                "s3:ListAllMyBuckets",
+                "lambda:ListFunctions",
+                "iam:ListUsers",
+                "iam:ListRoles",
+                "iam:ListPolicies",
+                "rds:DescribeDBInstances",
+                "dynamodb:ListTables",
+                "cloudformation:ListStacks",
+                "sns:ListTopics",
+                "cloud9:DescribeEnvironments",
+                "cloudwatch:DescribeAlarms",
+                "cloudwatch:ListDashboards"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
