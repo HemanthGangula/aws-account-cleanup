@@ -3,7 +3,7 @@
 ## Overview
 This script is designed to help clean up unnecessary AWS resources such as EC2 instances, S3 buckets, Lambda functions, IAM users, and more. It is intended for personal account usage, especially for avoiding unnecessary billing due to idle resources. ⚠️ Do not use in production environments. Always ensure to test thoroughly and obtain necessary permissions if using within a corporate environment.
 
-For full documentation, visit: [updating soon](xyz.xom).
+For full documentation, visit: [Documentation](https://hemanthgangula.hashnode.dev/how-i-automated-my-aws-cleanup-to-avoid-surprise-bills).
 
 ## Basic Usage
 ### Prerequisites
@@ -49,6 +49,6 @@ This will:
 - **Test First**: Always test the script in a non-production environment before using it on any critical resources.
 - **Permission Required**: If using in a corporate environment, ensure you have the necessary permissions before running the script. Misuse of this script could lead to unintended resource deletion and service disruption.
   
-For full documentation, visit: [updating soon](xyz.xom).
+For full documentation, visit: [Documentation](https://hemanthgangula.hashnode.dev/how-i-automated-my-aws-cleanup-to-avoid-surprise-bills).
 
 
